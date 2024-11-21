@@ -1,4 +1,4 @@
-FROM python:3.5-slim
+FROM python:3.6-slim
 MAINTAINER Hugo Herter
 
 RUN apt-get -y update && apt-get install -y python3-virtualenv virtualenv
