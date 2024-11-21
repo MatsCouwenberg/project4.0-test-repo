@@ -9,6 +9,7 @@ ADD requirements.txt /opt/requirements.txt
 RUN /opt/venv-hellodjango/bin/pip install -r /opt/requirements.txt
 
 ADD hellodjango /opt/hellodjango
+RUN chmod +x /opt/hellodjango/run.sh
 WORKDIR /opt/hellodjango/
 
 EXPOSE 8000
